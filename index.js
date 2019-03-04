@@ -1,6 +1,7 @@
 const express = require('express');
-const bodyParser = require('body-parser'); // нужен для парсинга тела http POST запросов
-const app = express();
+const config = require('./config');
+const bodyParser = require('body-parser'); // нужен для парсинга тела http POST запросов req.body
+const app = express(); // создание экземпляра приложения
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true})); // использование в приложении bodyParser
 const arr = ['hello', 'world', 'test'];
@@ -11,4 +12,4 @@ app.post('/create', (req, res) => {
     arr.push(req.body.text); // добавление строки из input в массив
     res.redirect('/');
 }); // получанеи и вывод инфы из POST запроса
-app.listen(3000, () => console.log('app listening on 3000 port'));
+app.listen(config.PORT, () => console.log('app listening on 3000 port'));
