@@ -22,5 +22,9 @@
   "devDependencies": {
     "eslint": "^5.15.0",
     "eslint-plugin-node": "^8.0.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
   }
 }
