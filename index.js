@@ -6,5 +6,9 @@ app.use(bodyParser.urlencoded({extended: true})); // использование 
 const arr = ['hello', 'world', 'test'];
 app.get('/', (req, res) => res.render('index', {arr: arr})); // передача JSON с полем data и значением data, будет использоваться в шаблоне
 app.get('/create', (req, res) => res.render('create'));
-app.post('/create', (req, res) => {console.log(req.body);}); // получанеи и вывод инфы из POST запроса
+app.post('/create', (req, res) => {
+    console.log(req.body);
+    arr.push(req.body.text); // добавление строки из input в массив
+    res.redirect('/');
+}); // получанеи и вывод инфы из POST запроса
 app.listen(3000, () => console.log('app listening on 3000 port'));
