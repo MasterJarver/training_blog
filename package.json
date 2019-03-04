@@ -1,0 +1,26 @@
+{
+  "name": "training_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterJarver/training_blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Jarver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MasterJarver/training_blog/issues"
+  },
+  "homepage": "https://github.com/MasterJarver/training_blog#readme",
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-plugin-node": "^8.0.1"
+  }
+}
