@@ -8,5 +8,9 @@ const schema = new Schema({
     body: {
         type: String
     }
+},
+    {timestamps: true});
+schema.set('toJSON', {
+    virtuals: true
 });
 module.exports = mongoose.model('Post', schema);
