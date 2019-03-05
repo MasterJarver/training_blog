@@ -22,6 +22,6 @@ gulp.task('browser-sync', () => {
         notify: false
     });
 });
-gulp.task('default', ['scss'], () => { // создание задачи для gulp
+gulp.task('default', ['browser-sync', 'scss'], () => { // создание задачи для gulp
     gulp.watch('dev/scss/**/*.scss', ['scss']);
 });
