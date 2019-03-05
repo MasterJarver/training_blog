@@ -1,7 +1,7 @@
 const config = require('./config');
 const mongoose = require('mongoose');
-module.exports = () => {
-    return new Promise((resolve, reject) => {
+module.exports = () => { // экспортируем результат функции
+    return new Promise((resolve, reject) => { // возврат нового промиса
         mongoose.Promise = global.Promise;
         mongoose.set('debug', true);
         mongoose.connection
