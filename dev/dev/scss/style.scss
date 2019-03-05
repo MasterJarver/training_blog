@@ -7,6 +7,7 @@ $freeSpace: 15px;
 $headerHeight: 49px;
 $footerHeight: 49px;
 @import 'reset';
+@import 'grid';
 html {
   display: flex;
   flex-direction: column;
