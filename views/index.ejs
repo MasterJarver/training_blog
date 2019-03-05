@@ -9,9 +9,11 @@
 </head>
 <body>
 <a href="/create">Add</a>
-<% arr.forEach((item) => { %>
+<% posts.forEach(post => { %>
 <li>
-    <%= item %>
+    <b><%= post.title %></b>
+    <br>
+    <%= post.body %>
 </li>
 <% }); %>
 </body>
