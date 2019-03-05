@@ -21,3 +21,6 @@ body {
   background-color: $whiteColor;
   // padding-top: $headerHeight + $freeSpace;
 }
+@import "header";
+@import "main";
+@import "footer";
