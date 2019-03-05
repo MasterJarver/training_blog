@@ -6,3 +6,17 @@ $secondaryColor: #d9ab4d;
 $freeSpace: 15px;
 $headerHeight: 49px;
 $footerHeight: 49px;
+@import 'reset';
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  color: $blackColor;
+  background-color: $whiteColor;
+  // padding-top: $headerHeight + $freeSpace;
+}
