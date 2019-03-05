@@ -12,7 +12,8 @@ gulp.task('scss', () => {
                 cascade: true
             }))
         .pipe(cssnano())
-        .pipe(gulp.dest('dist/css')); // выгрузка скомпилированного css в директорию
+        .pipe(gulp.dest('dist/css')) // выгрузка скомпилированного css в директорию
+        .pipe(browserSync.reload({stream: true}));
 });
 gulp.task('browser-sync', () => {
     browserSync({
@@ -24,4 +25,5 @@ gulp.task('browser-sync', () => {
 });
 gulp.task('default', ['browser-sync', 'scss'], () => { // создание задачи для gulp
     gulp.watch('dev/scss/**/*.scss', ['scss']);
+    gulp.watch('dist/*.html', browserSync.reload);
 });
