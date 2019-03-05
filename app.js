@@ -9,5 +9,4 @@ app.use('/javascripts', express.static(path.join(__dirname, 'node_modules', 'jqu
 app.get('/', (req, res) => {
     res.render('index');
 }); // передача JSON с полем data и значением data, будет использоваться в шаблоне
-
 module.exports = app;
