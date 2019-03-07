@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const browserSync = require('browser-sync');
+const plumber = require('gulp-plumber');
 gulp.task('scss', () => {
     return gulp
         .src('dev/scss/**/*.scss') // будет брать все файлы в подпапках

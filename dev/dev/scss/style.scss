@@ -8,6 +8,7 @@ $headerHeight: 49px;
 $footerHeight: 49px;
 @import 'reset';
 @import 'grid';
+@import 'typography';
 html {
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ body {
   flex: auto;
   color: $blackColor;
   background-color: $whiteColor;
-  // padding-top: $headerHeight + $freeSpace;
+  padding-top: $headerHeight + $freeSpace;
 }
 @import "header";
 @import "main";
