@@ -26,6 +26,19 @@ button, .button {
   &:hover {
     text-decoration: none;
   }
+  &.inverse {
+    color: $primaryColor;
+    background-color: $whiteColor;
+  }
+  &.secondary {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+  }
+  &.secondary-inverse {
+    color: $secondaryColor;
+    border-color: $secondaryColor;
+    background-color: $whiteColor;
+  }
 }
 input, textarea {
   background-color: $whiteColor;
