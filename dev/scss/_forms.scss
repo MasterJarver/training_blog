@@ -2,16 +2,12 @@ form {
   display: flex;
   flex-direction: column;
   .form-group {
+    line-height: 1.45;
     margin-bottom: $freeSpace;
     label {
       font-size: 0.9em;
     }
   }
-  //.button-group {
-  //  margin-top: 10px;
-  //  display: flex;
-  //  justify-content: flex-end;
-  //}
 }
 button, .button {
   color: $whiteColor;
